@@ -1,0 +1,95 @@
+{
+  "name": "starter-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@ant-design/pro-layout": "^6.19.2",
+    "@emotion/react": "^11.4.0",
+    "@emotion/styled": "^11.3.0",
+    "@jackwilsdon/craco-use-babelrc": "^1.0.0",
+    "@manaflair/redux-batch": "^1.0.0",
+    "@reduxjs/toolkit": "^1.5.1",
+    "@testing-library/jest-dom": "^5.12.0",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^13.1.9",
+    "antd": "^4.16.0",
+    "axios": "^0.21.1",
+    "connected-react-router": "^6.9.1",
+    "craco-antd": "^1.19.0",
+    "craco-less": "^1.17.1",
+    "cross-env": "^7.0.3",
+    "dayjs": "^1.10.5",
+    "emotion-normalize": "^11.0.1",
+    "history": "^5.0.0",
+    "lodash-es": "^4.17.21",
+    "prop-types": "^15.7.2",
+    "qs": "^6.10.1",
+    "query-string": "^7.0.0",
+    "rc-picker": "^2.5.10",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.4",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "redux": "^4.1.0",
+    "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.14.4",
+    "@craco/craco": "^6.1.2",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.24",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "craco-babel-loader": "^0.1.4",
+    "craco-less": "^1.17.1",
+    "eslint": "^7.27.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jest": "^24.3.6",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-unused-imports": "^1.1.1",
+    "less": "^4.1.1",
+    "lint-staged": "^11.0.0",
+    "pre-commit": "^1.2.2",
+    "prettier": "^2.3.0"
+  },
+  "scripts": {
+    "start": "cross-env NODE_ENV=development & craco start",
+    "build": "cross-env NODE_ENV=production & craco build",
+    "test": "craco test",
+    "eject": "react-scripts eject",
+    "lint": "eslint \"src/**/*.{jsx,js}\" --fix",
+    "lint-staged": "lint-staged",
+    "lint-pass": "echo '\\033[4;32m♡ ' Format complete ♡' \\033[0m'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "pre-commit": [
+    "lint-staged",
+    "lint-pass"
+  ]
+}
